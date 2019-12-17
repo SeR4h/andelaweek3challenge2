@@ -1,12 +1,12 @@
 const BankAccount = require('./account');
 
-test('returns amount deposited if user account number exists', () => {
-    expect(BankAccount.deposit(500000, 'SB1034')).toBe(500000);
+test('returns account balance after deposit ', () => {
+    expect(BankAccount.deposit(10000, 'SB1034')).toBe(510000);
 });
 test('returns null deposited if user account number doesnt exist', () => {
     expect(BankAccount.deposit(500000, 'SB134')).toBe('account doesnt exist');
 });
-test('returns amount', () => {
+test('returns balance', () => {
     expect(BankAccount.getBalance('SB1034')).toBe(500000);
 });
 test('exits if user account number doesnt exist', () => {
