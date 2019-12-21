@@ -17,7 +17,8 @@
     "url": "https://github.com/SeR4h/andelaweek3challenge2/issues"
   },
   "homepage": "https://github.com/SeR4h/andelaweek3challenge2#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "jest": "^24.9.0"
   }
 }
