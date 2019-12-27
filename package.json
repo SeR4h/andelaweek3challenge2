@@ -1,0 +1,24 @@
+{
+  "name": "andelaweek3challenge2",
+  "version": "1.0.0",
+  "description": "object oriented javascript",
+  "main": "account.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeR4h/andelaweek3challenge2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SeR4h/andelaweek3challenge2/issues"
+  },
+  "homepage": "https://github.com/SeR4h/andelaweek3challenge2#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
