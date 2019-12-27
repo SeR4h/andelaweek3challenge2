@@ -5,11 +5,11 @@ class BankAccount {
     this.accountNumber = accountNumber;
     this.accountStatus = accountStatus;
   }
-  IsActive() {
+  isActive() {
     return this.accountStatus === 'active';
   }
   open(name, balance) {
-    if (!this.IsActive()) {
+    if (!this.isActive()) {
       this.name = name;
       this.balance = balance;
       this.accountStatus = 'active';
@@ -18,7 +18,7 @@ class BankAccount {
   }
 
   deposit(depositAmount, accountNumber) {
-    if (this.accountNumber === accountNumber && this.IsActive()) {
+    if (this.accountNumber === accountNumber && this.isActive()) {
       console.log('You have deposited' + depositAmount)
       this.balance += depositAmount
       return this.balance;
@@ -29,7 +29,7 @@ class BankAccount {
   }
 
   getBalance(accountNumber) {
-    if (this.accountNumber === accountNumber && this.IsActive()) {
+    if (this.accountNumber === accountNumber && this.isActive()) {
       return this.balance;
     }
     else {
@@ -38,7 +38,7 @@ class BankAccount {
   }
 
   withdraw(withdrawAmount, accountNumber) {
-    if (this.accountNumber === accountNumber && this.IsActive()) {
+    if (this.accountNumber === accountNumber && this.isActive()) {
       this.balance -= withdrawAmount;
       console.log('You have withdrawn' + withdrawAmount)
       console.log('Account balance is' + this.balance)
@@ -50,7 +50,7 @@ class BankAccount {
   }
 
   close(accountNumber) {
-    if (this.accountNumber === accountNumber && this.IsActive()) {
+    if (this.accountNumber === accountNumber && this.isActive()) {
       this.accountStatus = 'closed'
       return 'Account closed successfully';
     }
